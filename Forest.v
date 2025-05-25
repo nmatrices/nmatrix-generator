@@ -1,6 +1,6 @@
 (** 
-    Implementation of non-deterministic matrices 
-    type and methods 
+    Implementation of a non-deterministic matrices generator
+    types and methods 
  **)
 
 (** **)
