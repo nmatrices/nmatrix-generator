@@ -1,0 +1,11 @@
+lib: [
+  "_build/install/default.windows/lib/rnkripke/META" {"../../windows-sysroot/lib/rnkripke/META"}
+  "_build/install/default.windows/lib/rnkripke/dune-package" {"../../windows-sysroot/lib/rnkripke/dune-package"}
+  "_build/install/default.windows/lib/rnkripke/opam" {"../../windows-sysroot/lib/rnkripke/opam"}
+]
+bin: [
+  "_build/install/default.windows/bin/rnkripke" {"../windows-sysroot/bin/rnkripke"}
+]
+doc: [
+  "_build/install/default.windows/doc/rnkripke/README.md" {"../../windows-sysroot/doc/rnkripke/README.md"}
+]

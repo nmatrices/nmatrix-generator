@@ -1,0 +1,15 @@
+type token =
+    RPAREN
+  | NEG
+  | LPAREN
+  | IMPL
+  | EOF
+  | DISJ
+  | DIA
+  | CONJ
+  | BOX
+  | ATOM of string
+val menhir_begin_marker : int
+val xv_prog : Ast.expr
+val xv_expr : Ast.expr
+val menhir_end_marker : int

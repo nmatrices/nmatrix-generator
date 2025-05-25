@@ -1,0 +1,11 @@
+lib: [
+  "_build/install/default/lib/rnkripke/META"
+  "_build/install/default/lib/rnkripke/dune-package"
+  "_build/install/default/lib/rnkripke/opam"
+]
+bin: [
+  "_build/install/default/bin/rnkripke"
+]
+doc: [
+  "_build/install/default/doc/rnkripke/README.md"
+]

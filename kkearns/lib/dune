@@ -1,0 +1,6 @@
+(library
+ (name rnkripke)
+ (libraries unix))
+
+(include_subdirs unqualified)
+

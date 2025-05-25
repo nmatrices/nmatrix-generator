@@ -1,0 +1,27 @@
+(lang dune 3.13)
+(using menhir 3.0)
+
+(name rnkripke)
+
+(generate_opam_files true)
+
+(source
+ (github rrleme/nmatrix-generator))
+
+(authors "Renato Leme")
+
+(maintainers "Renato Leme")
+
+(license LICENSE)
+
+(documentation https://url/to/documentation)
+
+(package
+ (name rnkripke)
+ (synopsis "A decision procedure based on truth tables for K modal logic and subsystems.")
+ (description "This program is based on the non-deterministic semantics with level valuations.")
+ (depends ocaml dune)
+ (tags
+  ("modal logics" "nmatrix" "kearns" "truth-table")))
+
+; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project

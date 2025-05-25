@@ -1,0 +1,6 @@
+(executable
+ (public_name rnkripke)
+ (name kkearns)
+ (libraries rnkripke)
+ )
+
