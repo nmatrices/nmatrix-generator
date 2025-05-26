@@ -159,6 +159,26 @@ Definition makeComputeTable
   let steps := makeRestrictionSteps A in
   computeTable steps.
 
+Fixpoint makeLevel0_aux1 (row : list (Forest.node LF)) :=
+  match row with
+  | nil => nil
+  | (Forest.Node _ _ A)::tl => A::(makeLevel0_aux1 tl)
+  end.
+
+Fixpoint makeLevel0_aux (initLabel: nat) (table : list (list nat)) :=
+  match table with
+  | nil => nil
+  | row::tl =>
+      (initLabel; row)::(makeLevel0_aux (initLabel+1) tl)
+  end.
+
+Definition makeLevel0
+  (A : LF) :=
+  let table := reverseThisList (makeMatrix A) in
+  let subA := makeLevel0_aux1 (pop table nil) in
+  let level0 := nodeToNat table in
+  (subA; makeLevel0_aux 1 level0).
+
 
 (*************************************)
 
@@ -303,5 +323,5 @@ Extract Inductive bool => "bool" [ "true" "false" ].
 Extract Inductive list => "list" [ "[]" "(::)" ].
 
 Recursive Extraction
-  makeCheckAllModels makeComputeTable makeThisRn.
+  makeCheckAllModels makeComputeTable makeThisRn makeLevel0.
 

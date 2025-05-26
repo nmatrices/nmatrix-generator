@@ -149,7 +149,7 @@ Definition makeRestrictionSteps
     leb_lf
     geb_lf
     split_lf
-    arrows
+    arrowsKT45
     8
     truleKT45
 .
@@ -159,6 +159,25 @@ Definition makeComputeTable
   let steps := makeRestrictionSteps A in
   computeTable steps.
 
+Fixpoint makeLevel0_aux1 (row : list (Forest.node LF)) :=
+  match row with
+  | nil => nil
+  | (Forest.Node _ _ A)::tl => A::(makeLevel0_aux1 tl)
+  end.
+
+Fixpoint makeLevel0_aux (initLabel: nat) (table : list (list nat)) :=
+  match table with
+  | nil => nil
+  | row::tl =>
+      (initLabel; row)::(makeLevel0_aux (initLabel+1) tl)
+  end.
+
+Definition makeLevel0
+  (A : LF) :=
+  let table := reverseThisList (makeMatrix A) in
+  let subA := makeLevel0_aux1 (pop table nil) in
+  let level0 := nodeToNat table in
+  (subA; makeLevel0_aux 1 level0).
 
 (*************************************)
 
@@ -203,7 +222,7 @@ Definition makeArrangeKM
     leb_lf
     geb_lf
     split_lf
-    arrows
+    arrowsKT45
     8
     smallest lazymode truleKT45
 .
@@ -221,7 +240,7 @@ Definition makeThisRn
     geb_lf
     length_lf
     split_lf
-    arrows
+    arrowsKT45
     8
     D
     [Reflexive; Symmetry]
@@ -240,7 +259,7 @@ Definition makeAllRn
     geb_lf
     length_lf
     split_lf
-    arrows
+    arrowsKT45
     8
     D
     [Reflexive; Symmetry]
@@ -287,7 +306,7 @@ Definition makeCheckAllModels
     (makeMatrix A)
     eqb_lf leb_lf geb_lf
     split_lf
-    arrows
+    arrowsKT45
     Val
     8
     (makeAllRn A smallest lazymode)
@@ -303,4 +322,4 @@ Extract Inductive bool => "bool" [ "true" "false" ].
 Extract Inductive list => "list" [ "[]" "(::)" ].
 
 Recursive Extraction
-  makeCheckAllModels makeComputeTable makeThisRn.
+  makeCheckAllModels makeComputeTable makeThisRn makeLevel0.

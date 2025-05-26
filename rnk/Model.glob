@@ -1,0 +1,627 @@
+DIGEST d663f446de081c9838e287457f50a864
+FMain.rnk.Model
+R92:96 Coq.Arith.Arith <> <> lib
+R114:128 Coq.Arith.EqNat <> <> lib
+R146:151 Main.Forest <> <> lib
+R169:171 Main.rnk.rnk <> <> lib
+R189:192 Coq.Lists.List <> <> lib
+R210:214 Coq.Arith.Arith <> <> lib
+R224:236 Coq.Lists.List ListNotations <> mod
+def 249:262 <> findRowByIndex
+binder 267:267 <> X:1
+R289:292 Coq.Init.Datatypes <> list ind
+R295:298 Main.Forest <> pair ind
+R300:302 Coq.Init.Datatypes <> nat ind
+R305:308 Coq.Init.Datatypes <> list ind
+R310:310 Main.rnk.Model <> X:1 var
+binder 280:285 <> matrix:2
+R326:328 Coq.Init.Datatypes <> nat ind
+binder 318:322 <> index:3
+R342:347 Main.rnk.Model <> matrix:2 var
+R358:360 Coq.Init.Datatypes <> nil constr
+R365:367 Coq.Init.Datatypes <> nil constr
+R374:375 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R391:397 Coq.Arith.PeanoNat Nat eqb def
+R399:403 Main.rnk.Model <> index:3 var
+R406:411 Main.Forest <> proj_l def
+R457:470 Main.rnk.Model <> findRowByIndex:4 def
+R475:479 Main.rnk.Model <> index:3 var
+R429:434 Main.Forest <> proj_r def
+def 498:508 <> checkValInW
+binder 513:513 <> X:6
+R530:530 Main.rnk.Model <> X:6 var
+binder 526:526 <> A:7
+R540:542 Coq.Init.Datatypes <> nat ind
+binder 536:536 <> w:8
+R552:555 Coq.Init.Datatypes <> list ind
+R558:561 Main.rnk.rnk <> node ind
+R563:563 Main.rnk.Model <> X:6 var
+binder 548:548 <> l:9
+R577:580 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R576:576 Main.rnk.Model <> X:6 var
+R582:585 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R581:581 Main.rnk.Model <> X:6 var
+R586:589 Coq.Init.Datatypes <> bool ind
+binder 570:572 <> cmp:10
+R605:605 Main.rnk.Model <> l:9 var
+R616:618 Coq.Init.Datatypes <> nil constr
+R623:627 Coq.Init.Datatypes <> false constr
+R634:635 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R669:672 Main.rnk.rnk <> Node constr
+R695:701 Coq.Arith.PeanoNat Nat eqb def
+R703:703 Main.rnk.Model <> w:8 var
+R875:885 Main.rnk.Model <> checkValInW:11 def
+R894:896 Main.rnk.Model <> cmp:10 var
+R889:889 Main.rnk.Model <> w:8 var
+R887:887 Main.rnk.Model <> A:7 var
+R752:755 Main.rnk.rnk <> sign constr
+R784:786 Main.rnk.Model <> cmp:10 var
+R788:788 Main.rnk.Model <> A:7 var
+R821:831 Main.rnk.Model <> checkValInW:11 def
+R840:842 Main.rnk.Model <> cmp:10 var
+R835:835 Main.rnk.Model <> w:8 var
+R833:833 Main.rnk.Model <> A:7 var
+R911:921 Main.rnk.Model <> checkValInW:11 def
+R930:932 Main.rnk.Model <> cmp:10 var
+R925:925 Main.rnk.Model <> w:8 var
+R923:923 Main.rnk.Model <> A:7 var
+def 961:979 <> getAllAccessedWorld
+binder 984:984 <> X:15
+R1001:1004 Coq.Init.Datatypes <> list ind
+R1007:1010 Main.rnk.rnk <> node ind
+R1012:1012 Main.rnk.Model <> X:15 var
+binder 997:997 <> l:16
+R1023:1025 Coq.Init.Datatypes <> nat ind
+binder 1019:1019 <> w:17
+R1041:1041 Main.rnk.Model <> l:16 var
+R1052:1054 Coq.Init.Datatypes <> nil constr
+R1059:1061 Coq.Init.Datatypes <> nil constr
+R1068:1069 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1103:1105 Main.rnk.rnk <> Rel constr
+R1129:1135 Coq.Arith.PeanoNat Nat eqb def
+R1137:1137 Main.rnk.Model <> w:17 var
+R1215:1233 Main.rnk.Model <> getAllAccessedWorld:18 def
+R1238:1238 Main.rnk.Model <> w:17 var
+R1159:1161 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1186:1186 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1162:1180 Main.rnk.Model <> getAllAccessedWorld:18 def
+R1185:1185 Main.rnk.Model <> w:17 var
+R1253:1271 Main.rnk.Model <> getAllAccessedWorld:18 def
+R1276:1276 Main.rnk.Model <> w:17 var
+def 1305:1312 <> checkAll
+binder 1317:1317 <> X:21
+R1334:1334 Main.rnk.Model <> X:21 var
+binder 1330:1330 <> A:22
+R1344:1347 Coq.Init.Datatypes <> list ind
+R1349:1351 Coq.Init.Datatypes <> nat ind
+binder 1340:1340 <> l:23
+R1362:1365 Coq.Init.Datatypes <> list ind
+R1368:1371 Main.rnk.rnk <> node ind
+R1373:1373 Main.rnk.Model <> X:21 var
+binder 1357:1358 <> lN:24
+R1387:1390 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1386:1386 Main.rnk.Model <> X:21 var
+R1392:1395 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1391:1391 Main.rnk.Model <> X:21 var
+R1396:1399 Coq.Init.Datatypes <> bool ind
+binder 1380:1382 <> cmp:25
+R1415:1415 Main.rnk.Model <> l:23 var
+R1426:1428 Coq.Init.Datatypes <> nil constr
+R1433:1436 Coq.Init.Datatypes <> true constr
+R1443:1444 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1457:1460 Coq.Init.Datatypes <> andb def
+R1504:1511 Main.rnk.Model <> checkAll:26 def
+R1521:1523 Main.rnk.Model <> cmp:25 var
+R1518:1519 Main.rnk.Model <> lN:24 var
+R1513:1513 Main.rnk.Model <> A:22 var
+R1471:1481 Main.rnk.Model <> checkValInW def
+R1490:1492 Main.rnk.Model <> cmp:25 var
+R1487:1488 Main.rnk.Model <> lN:24 var
+R1483:1483 Main.rnk.Model <> A:22 var
+def 1543:1555 <> checkAllFalse
+binder 1560:1560 <> X:28
+R1577:1577 Main.rnk.Model <> X:28 var
+binder 1573:1573 <> A:29
+R1587:1590 Coq.Init.Datatypes <> list ind
+R1592:1594 Coq.Init.Datatypes <> nat ind
+binder 1583:1583 <> l:30
+R1605:1608 Coq.Init.Datatypes <> list ind
+R1611:1614 Main.rnk.rnk <> node ind
+R1616:1616 Main.rnk.Model <> X:28 var
+binder 1600:1601 <> lN:31
+R1630:1633 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1629:1629 Main.rnk.Model <> X:28 var
+R1635:1638 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1634:1634 Main.rnk.Model <> X:28 var
+R1639:1642 Coq.Init.Datatypes <> bool ind
+binder 1623:1625 <> cmp:32
+R1658:1658 Main.rnk.Model <> l:30 var
+R1669:1671 Coq.Init.Datatypes <> nil constr
+R1676:1679 Coq.Init.Datatypes <> true constr
+R1686:1687 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1700:1703 Coq.Init.Datatypes <> andb def
+R1754:1757 Coq.Init.Datatypes <> negb def
+R1760:1772 Main.rnk.Model <> checkAllFalse:33 def
+R1782:1784 Main.rnk.Model <> cmp:32 var
+R1779:1780 Main.rnk.Model <> lN:31 var
+R1774:1774 Main.rnk.Model <> A:29 var
+R1714:1717 Coq.Init.Datatypes <> negb def
+R1720:1730 Main.rnk.Model <> checkValInW def
+R1739:1741 Main.rnk.Model <> cmp:32 var
+R1736:1737 Main.rnk.Model <> lN:31 var
+R1732:1732 Main.rnk.Model <> A:29 var
+def 1805:1816 <> getAllTrueIn
+binder 1821:1821 <> X:35
+R1838:1838 Main.rnk.Model <> X:35 var
+binder 1834:1834 <> A:36
+R1848:1851 Coq.Init.Datatypes <> list ind
+R1853:1855 Coq.Init.Datatypes <> nat ind
+binder 1844:1844 <> l:37
+R1866:1869 Coq.Init.Datatypes <> list ind
+R1872:1875 Main.rnk.rnk <> node ind
+R1877:1877 Main.rnk.Model <> X:35 var
+binder 1861:1863 <> ekm:38
+R1891:1894 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1890:1890 Main.rnk.Model <> X:35 var
+R1896:1899 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1895:1895 Main.rnk.Model <> X:35 var
+R1900:1903 Coq.Init.Datatypes <> bool ind
+binder 1884:1886 <> cmp:39
+R1919:1919 Main.rnk.Model <> l:37 var
+R1930:1932 Coq.Init.Datatypes <> nil constr
+R1937:1939 Coq.Init.Datatypes <> nil constr
+R1946:1947 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1963:1973 Main.rnk.Model <> checkValInW def
+R1983:1985 Main.rnk.Model <> cmp:39 var
+R1979:1981 Main.rnk.Model <> ekm:38 var
+R1975:1975 Main.rnk.Model <> A:36 var
+R2050:2061 Main.rnk.Model <> getAllTrueIn:40 def
+R2072:2074 Main.rnk.Model <> cmp:39 var
+R2068:2070 Main.rnk.Model <> ekm:38 var
+R2063:2063 Main.rnk.Model <> A:36 var
+R2001:2003 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2029:2029 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2004:2015 Main.rnk.Model <> getAllTrueIn:40 def
+R2026:2028 Main.rnk.Model <> cmp:39 var
+R2022:2024 Main.rnk.Model <> ekm:38 var
+R2017:2017 Main.rnk.Model <> A:36 var
+def 2093:2099 <> forallb
+R2106:2109 Coq.Init.Datatypes <> list ind
+R2111:2114 Coq.Init.Datatypes <> bool ind
+binder 2102:2102 <> l:42
+R2128:2128 Main.rnk.Model <> l:42 var
+R2139:2141 Coq.Init.Datatypes <> nil constr
+R2146:2149 Coq.Init.Datatypes <> true constr
+R2156:2157 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2170:2173 Coq.Init.Datatypes <> andb def
+R2178:2184 Main.rnk.Model <> forallb:43 def
+def 2207:2212 <> existb
+R2219:2222 Coq.Init.Datatypes <> list ind
+R2224:2227 Coq.Init.Datatypes <> bool ind
+binder 2215:2215 <> l:45
+R2241:2241 Main.rnk.Model <> l:45 var
+R2252:2254 Coq.Init.Datatypes <> nil constr
+R2259:2263 Coq.Init.Datatypes <> false constr
+R2270:2271 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2284:2286 Coq.Init.Datatypes <> orb def
+R2291:2296 Main.rnk.Model <> existb:46 def
+def 2319:2328 <> forallnegb
+R2335:2338 Coq.Init.Datatypes <> list ind
+R2340:2343 Coq.Init.Datatypes <> bool ind
+binder 2331:2331 <> l:48
+R2357:2357 Main.rnk.Model <> l:48 var
+R2368:2370 Coq.Init.Datatypes <> nil constr
+R2375:2378 Coq.Init.Datatypes <> true constr
+R2385:2386 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2399:2402 Coq.Init.Datatypes <> andb def
+R2414:2423 Main.rnk.Model <> forallnegb:49 def
+R2405:2408 Coq.Init.Datatypes <> negb def
+def 2446:2461 <> valIsHeredit_aux
+binder 2466:2466 <> X:51
+R2483:2483 Main.rnk.Model <> X:51 var
+binder 2479:2479 <> A:52
+R2496:2499 Coq.Init.Datatypes <> list ind
+R2501:2503 Coq.Init.Datatypes <> nat ind
+binder 2489:2492 <> accW:53
+R2515:2518 Coq.Init.Datatypes <> list ind
+R2521:2524 Main.rnk.rnk <> node ind
+R2526:2526 Main.rnk.Model <> X:51 var
+binder 2509:2511 <> ekm:54
+R2540:2543 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2539:2539 Main.rnk.Model <> X:51 var
+R2545:2548 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2544:2544 Main.rnk.Model <> X:51 var
+R2549:2552 Coq.Init.Datatypes <> bool ind
+binder 2533:2535 <> cmp:55
+R2568:2571 Main.rnk.Model <> accW:53 var
+R2582:2584 Coq.Init.Datatypes <> nil constr
+R2589:2592 Coq.Init.Datatypes <> true constr
+R2599:2600 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2613:2616 Coq.Init.Datatypes <> andb def
+R2661:2676 Main.rnk.Model <> valIsHeredit_aux:56 def
+R2687:2689 Main.rnk.Model <> cmp:55 var
+R2683:2685 Main.rnk.Model <> ekm:54 var
+R2678:2678 Main.rnk.Model <> A:52 var
+R2627:2637 Main.rnk.Model <> checkValInW def
+R2647:2649 Main.rnk.Model <> cmp:55 var
+R2643:2645 Main.rnk.Model <> ekm:54 var
+R2639:2639 Main.rnk.Model <> A:52 var
+def 2711:2722 <> valIsHeredit
+binder 2727:2727 <> X:58
+R2754:2757 Coq.Init.Datatypes <> list ind
+R2760:2763 Main.rnk.rnk <> node ind
+R2765:2765 Main.rnk.Model <> X:58 var
+binder 2740:2750 <> atomicNodes:59
+R2778:2781 Coq.Init.Datatypes <> list ind
+R2784:2787 Main.rnk.rnk <> node ind
+R2789:2789 Main.rnk.Model <> X:58 var
+binder 2772:2774 <> ekm:60
+R2803:2806 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2802:2802 Main.rnk.Model <> X:58 var
+R2808:2811 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2807:2807 Main.rnk.Model <> X:58 var
+R2812:2815 Coq.Init.Datatypes <> bool ind
+binder 2796:2798 <> cmp:61
+R2831:2841 Main.rnk.Model <> atomicNodes:59 var
+R2852:2854 Coq.Init.Datatypes <> nil constr
+R2859:2862 Coq.Init.Datatypes <> true constr
+R2869:2870 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2904:2907 Main.rnk.rnk <> Node constr
+R2953:2956 Main.rnk.rnk <> sign constr
+R3198:3209 Main.rnk.Model <> valIsHeredit:62 def
+R3218:3220 Main.rnk.Model <> cmp:61 var
+R3214:3216 Main.rnk.Model <> ekm:60 var
+R3017:3035 Main.rnk.Model <> getAllAccessedWorld def
+R3037:3039 Main.rnk.Model <> ekm:60 var
+binder 3009:3012 <> accW:66
+R3062:3065 Coq.Init.Datatypes <> andb def
+R3138:3149 Main.rnk.Model <> valIsHeredit:62 def
+R3158:3160 Main.rnk.Model <> cmp:61 var
+R3154:3156 Main.rnk.Model <> ekm:60 var
+R3086:3101 Main.rnk.Model <> valIsHeredit_aux def
+R3114:3116 Main.rnk.Model <> cmp:61 var
+R3110:3112 Main.rnk.Model <> ekm:60 var
+R3105:3108 Main.rnk.Model <> accW:66 var
+R3249:3260 Main.rnk.Model <> valIsHeredit:62 def
+R3269:3271 Main.rnk.Model <> cmp:61 var
+R3265:3267 Main.rnk.Model <> ekm:60 var
+def 3300:3312 <> closeToH_aux2
+binder 3317:3317 <> X:67
+R3334:3334 Main.rnk.Model <> X:67 var
+binder 3330:3330 <> A:68
+R3347:3350 Coq.Init.Datatypes <> list ind
+R3352:3354 Coq.Init.Datatypes <> nat ind
+binder 3340:3343 <> accW:69
+R3366:3369 Coq.Init.Datatypes <> list ind
+R3372:3375 Main.rnk.rnk <> node ind
+R3377:3377 Main.rnk.Model <> X:67 var
+binder 3360:3362 <> ekm:70
+R3394:3397 Main.rnk.Model <> accW:69 var
+R3408:3410 Coq.Init.Datatypes <> nil constr
+R3415:3417 Coq.Init.Datatypes <> nil constr
+R3424:3425 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3432:3432 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3453:3456 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3479:3479 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3433:3436 Main.rnk.rnk <> Node constr
+R3439:3442 Main.rnk.rnk <> sign constr
+R3449:3449 Main.rnk.Model <> A:68 var
+R3444:3447 Coq.Init.Datatypes <> true constr
+R3457:3469 Main.rnk.Model <> closeToH_aux2:71 def
+R3476:3478 Main.rnk.Model <> ekm:70 var
+R3471:3471 Main.rnk.Model <> A:68 var
+def 3500:3512 <> closeToH_aux1
+binder 3517:3517 <> X:73
+R3540:3543 Coq.Init.Datatypes <> list ind
+R3546:3549 Main.rnk.rnk <> node ind
+R3551:3551 Main.rnk.Model <> X:73 var
+binder 3530:3536 <> atomics:74
+R3564:3567 Coq.Init.Datatypes <> list ind
+R3570:3573 Main.rnk.rnk <> node ind
+R3575:3575 Main.rnk.Model <> X:73 var
+binder 3558:3560 <> ekm:75
+R3592:3598 Main.rnk.Model <> atomics:74 var
+R3609:3611 Coq.Init.Datatypes <> nil constr
+R3616:3618 Coq.Init.Datatypes <> nil constr
+R3625:3626 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3660:3663 Main.rnk.rnk <> Node constr
+R3709:3712 Main.rnk.rnk <> sign constr
+R3946:3946 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3956:3958 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R3947:3950 Main.rnk.rnk <> Node constr
+R3959:3971 Main.rnk.Model <> closeToH_aux1:76 def
+R3976:3978 Main.rnk.Model <> ekm:75 var
+R3773:3791 Main.rnk.Model <> getAllAccessedWorld def
+R3793:3795 Main.rnk.Model <> ekm:75 var
+binder 3765:3768 <> accW:80
+R3834:3846 Main.rnk.Model <> closeToH_aux2 def
+R3855:3857 Main.rnk.Model <> ekm:75 var
+R3850:3853 Main.rnk.Model <> accW:80 var
+binder 3822:3829 <> newNodes:81
+R3886:3888 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3909:3909 Coq.Init.Datatypes <> ::list_scope:x_'++'_x not
+R3878:3885 Main.rnk.Model <> newNodes:81 var
+R3889:3901 Main.rnk.Model <> closeToH_aux1:76 def
+R3906:3908 Main.rnk.Model <> ekm:75 var
+R4007:4019 Main.rnk.Model <> closeToH_aux1:76 def
+R4024:4026 Main.rnk.Model <> ekm:75 var
+def 4090:4108 <> checkAllModels_aux3
+binder 4113:4113 <> X:82
+R4133:4136 Coq.Init.Datatypes <> list ind
+R4138:4138 Main.rnk.Model <> X:82 var
+binder 4126:4129 <> subA:83
+R4151:4153 Coq.Init.Datatypes <> nat ind
+binder 4144:4147 <> root:84
+R4167:4170 Coq.Init.Datatypes <> list ind
+R4173:4176 Main.rnk.rnk <> node ind
+R4178:4178 Main.rnk.Model <> X:82 var
+binder 4159:4163 <> model:85
+R4192:4195 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4191:4191 Main.rnk.Model <> X:82 var
+R4209:4212 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4196:4199 Coq.Init.Datatypes <> list ind
+R4202:4205 Main.rnk.rnk <> node ind
+R4207:4207 Main.rnk.Model <> X:82 var
+R4216:4219 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4213:4215 Coq.Init.Datatypes <> nat ind
+R4220:4223 Coq.Init.Datatypes <> bool ind
+binder 4185:4187 <> Val:86
+R4241:4244 Coq.Init.Datatypes <> list ind
+R4246:4248 Coq.Init.Datatypes <> nat ind
+binder 4229:4237 <> valuation:87
+R4258:4261 Coq.Init.Datatypes <> list ind
+R4263:4265 Coq.Init.Datatypes <> nat ind
+binder 4254:4254 <> D:88
+R4287:4295 Main.rnk.Model <> valuation:87 var
+R4281:4284 Main.rnk.Model <> subA:83 var
+R4307:4308 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4316:4317 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4342:4344 Main.rnk.Model <> Val:86 var
+R4354:4357 Main.rnk.Model <> root:84 var
+R4348:4352 Main.rnk.Model <> model:85 var
+binder 4336:4337 <> VA:92
+R4371:4374 Coq.Init.Datatypes <> andb def
+R4407:4408 Main.rnk.Model <> VA:92 var
+R4377:4391 Main.rnk.rnk <> isElementInList def
+R4398:4404 Coq.Arith.PeanoNat Nat eqb def
+R4396:4396 Main.rnk.Model <> D:88 var
+R4498:4501 Coq.Init.Datatypes <> andb def
+R4542:4545 Coq.Init.Datatypes <> negb def
+R4547:4548 Main.rnk.Model <> VA:92 var
+R4504:4507 Coq.Init.Datatypes <> negb def
+R4510:4524 Main.rnk.rnk <> isElementInList def
+R4531:4537 Coq.Arith.PeanoNat Nat eqb def
+R4529:4529 Main.rnk.Model <> D:88 var
+R4647:4649 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4694:4694 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4642:4646 Coq.Init.Datatypes <> false constr
+R4650:4668 Main.rnk.Model <> checkAllModels_aux3:89 def
+R4693:4693 Main.rnk.Model <> D:88 var
+R4685:4687 Main.rnk.Model <> Val:86 var
+R4679:4683 Main.rnk.Model <> model:85 var
+R4674:4677 Main.rnk.Model <> root:84 var
+R4570:4572 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4617:4617 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4566:4569 Coq.Init.Datatypes <> true constr
+R4573:4591 Main.rnk.Model <> checkAllModels_aux3:89 def
+R4616:4616 Main.rnk.Model <> D:88 var
+R4608:4610 Main.rnk.Model <> Val:86 var
+R4602:4606 Main.rnk.Model <> model:85 var
+R4597:4600 Main.rnk.Model <> root:84 var
+R4427:4429 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4474:4474 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R4423:4426 Coq.Init.Datatypes <> true constr
+R4430:4448 Main.rnk.Model <> checkAllModels_aux3:89 def
+R4473:4473 Main.rnk.Model <> D:88 var
+R4465:4467 Main.rnk.Model <> Val:86 var
+R4459:4463 Main.rnk.Model <> model:85 var
+R4454:4457 Main.rnk.Model <> root:84 var
+R4708:4710 Coq.Init.Datatypes <> nil constr
+def 4729:4746 <> checkAllModels_aux
+binder 4751:4751 <> X:93
+R4773:4776 Coq.Init.Datatypes <> list ind
+R4779:4782 Main.Forest <> pair ind
+R4784:4786 Coq.Init.Datatypes <> nat ind
+R4789:4792 Coq.Init.Datatypes <> list ind
+R4794:4796 Coq.Init.Datatypes <> nat ind
+binder 4764:4769 <> matrix:94
+R4811:4814 Coq.Init.Datatypes <> list ind
+R4816:4816 Main.rnk.Model <> X:93 var
+binder 4804:4807 <> subA:95
+R4826:4829 Coq.Init.Datatypes <> list ind
+R4832:4835 Main.Forest <> pair ind
+R4837:4839 Coq.Init.Datatypes <> nat ind
+R4842:4845 Main.Forest <> pair ind
+R4848:4851 Coq.Init.Datatypes <> list ind
+R4854:4857 Main.rnk.rnk <> node ind
+R4859:4859 Main.rnk.Model <> X:93 var
+R4864:4867 Coq.Init.Datatypes <> list ind
+R4869:4871 Coq.Init.Datatypes <> nat ind
+binder 4822:4822 <> l:96
+R4887:4890 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4886:4886 Main.rnk.Model <> X:93 var
+R4904:4907 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4891:4894 Coq.Init.Datatypes <> list ind
+R4897:4900 Main.rnk.rnk <> node ind
+R4902:4902 Main.rnk.Model <> X:93 var
+R4911:4914 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4908:4910 Coq.Init.Datatypes <> nat ind
+R4915:4918 Coq.Init.Datatypes <> bool ind
+binder 4880:4882 <> Val:97
+R4928:4931 Coq.Init.Datatypes <> list ind
+R4933:4935 Coq.Init.Datatypes <> nat ind
+binder 4924:4924 <> D:98
+R4951:4951 Main.rnk.Model <> l:96 var
+R4962:4964 Coq.Init.Datatypes <> nil constr
+R4969:4971 Coq.Init.Datatypes <> nil constr
+R4978:4979 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5004:5009 Main.Forest <> proj_l def
+binder 4996:4999 <> root:101
+R5035:5040 Main.Forest <> proj_l def
+R5043:5048 Main.Forest <> proj_r def
+binder 5026:5030 <> model:102
+R5079:5092 Main.rnk.Model <> findRowByIndex def
+R5101:5104 Main.rnk.Model <> root:101 var
+R5094:5099 Main.rnk.Model <> matrix:94 var
+binder 5066:5074 <> valuation:103
+R5176:5187 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5227:5227 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5115:5115 Main.rnk.rnk <> :::'('_x_','_x_')' not
+R5120:5122 Main.rnk.rnk <> :::'('_x_','_x_')' not
+R5174:5175 Main.rnk.rnk <> :::'('_x_','_x_')' not
+R5116:5119 Main.rnk.Model <> root:101 var
+R5123:5141 Main.rnk.Model <> checkAllModels_aux3 def
+R5173:5173 Main.rnk.Model <> D:98 var
+R5163:5171 Main.rnk.Model <> valuation:103 var
+R5159:5161 Main.rnk.Model <> Val:97 var
+R5153:5157 Main.rnk.Model <> model:102 var
+R5148:5151 Main.rnk.Model <> root:101 var
+R5143:5146 Main.rnk.Model <> subA:95 var
+R5188:5205 Main.rnk.Model <> checkAllModels_aux:99 def
+R5226:5226 Main.rnk.Model <> D:98 var
+R5222:5224 Main.rnk.Model <> Val:97 var
+R5214:5217 Main.rnk.Model <> subA:95 var
+R5207:5212 Main.rnk.Model <> matrix:94 var
+def 5246:5264 <> checkAllModels_aux2
+R5278:5281 Coq.Init.Datatypes <> list ind
+R5284:5287 Main.Forest <> pair ind
+R5289:5291 Coq.Init.Datatypes <> nat ind
+R5294:5297 Coq.Init.Datatypes <> list ind
+R5299:5301 Coq.Init.Datatypes <> nat ind
+binder 5269:5274 <> matrix:104
+R5322:5325 Coq.Init.Datatypes <> list ind
+R5328:5331 Main.Forest <> pair ind
+R5333:5335 Coq.Init.Datatypes <> nat ind
+R5338:5341 Coq.Init.Datatypes <> list ind
+R5343:5346 Coq.Init.Datatypes <> bool ind
+binder 5309:5318 <> models_res:105
+R5364:5373 Main.rnk.Model <> models_res:105 var
+R5386:5387 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5414:5419 Main.Forest <> proj_l def
+binder 5405:5409 <> index:108
+R5444:5457 Main.rnk.Model <> findRowByIndex def
+R5466:5470 Main.rnk.Model <> index:108 var
+R5459:5464 Main.rnk.Model <> matrix:104 var
+binder 5437:5439 <> row:109
+R5508:5510 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5541:5541 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R5481:5481 Main.rnk.rnk <> :::'('_x_','_x_')' not
+R5487:5488 Main.rnk.rnk <> :::'('_x_','_x_')' not
+R5507:5507 Main.rnk.rnk <> :::'('_x_','_x_')' not
+R5482:5486 Main.rnk.Model <> index:108 var
+R5489:5489 Main.rnk.rnk <> :::'('_x_','_x_')' not
+R5493:5495 Main.rnk.rnk <> :::'('_x_','_x_')' not
+R5505:5506 Main.rnk.rnk <> :::'('_x_','_x_')' not
+R5490:5492 Main.rnk.Model <> row:109 var
+R5496:5501 Main.Forest <> proj_r def
+R5511:5529 Main.rnk.Model <> checkAllModels_aux2:106 def
+R5531:5536 Main.rnk.Model <> matrix:104 var
+R5547:5549 Coq.Init.Datatypes <> nil constr
+R5554:5556 Coq.Init.Datatypes <> nil constr
+def 5577:5590 <> checkAllModels
+binder 5595:5595 <> X:110
+R5612:5612 Main.rnk.Model <> X:110 var
+binder 5608:5608 <> A:111
+R5622:5625 Coq.Init.Datatypes <> list ind
+R5628:5631 Coq.Init.Datatypes <> list ind
+R5634:5644 Main.Forest <> node ind
+R5646:5646 Main.rnk.Model <> X:110 var
+binder 5618:5618 <> M:112
+R5767:5770 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5766:5766 Main.rnk.Model <> X:110 var
+R5772:5775 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5771:5771 Main.rnk.Model <> X:110 var
+R5776:5779 Coq.Init.Datatypes <> bool ind
+binder 5746:5750 <> eqb_X:113
+binder 5752:5756 <> leb_X:114
+binder 5758:5762 <> geb_X:115
+R5822:5825 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5821:5821 Main.rnk.Model <> X:110 var
+R5826:5829 Coq.Init.Datatypes <> list ind
+R5831:5831 Main.rnk.Model <> X:110 var
+binder 5813:5817 <> split:116
+R5846:5849 Coq.Init.Datatypes <> list ind
+R5852:5855 Main.Forest <> pair ind
+R5857:5859 Coq.Init.Datatypes <> nat ind
+R5862:5865 Coq.Init.Datatypes <> list ind
+R5868:5871 Coq.Init.Datatypes <> list ind
+R5873:5875 Coq.Init.Datatypes <> nat ind
+binder 5837:5842 <> arrows:117
+R5891:5894 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5890:5890 Main.rnk.Model <> X:110 var
+R5908:5911 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5895:5898 Coq.Init.Datatypes <> list ind
+R5901:5904 Main.rnk.rnk <> node ind
+R5906:5906 Main.rnk.Model <> X:110 var
+R5915:5918 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5912:5914 Coq.Init.Datatypes <> nat ind
+R5919:5922 Coq.Init.Datatypes <> bool ind
+binder 5884:5886 <> Val:118
+R5938:5940 Coq.Init.Datatypes <> nat ind
+binder 5928:5934 <> default:119
+R5955:5958 Coq.Init.Datatypes <> list ind
+R5961:5964 Main.Forest <> pair ind
+R5966:5968 Coq.Init.Datatypes <> nat ind
+R5971:5974 Main.Forest <> pair ind
+R5977:5980 Coq.Init.Datatypes <> list ind
+R5983:5986 Main.rnk.rnk <> node ind
+R5988:5988 Main.rnk.Model <> X:110 var
+R5993:5996 Coq.Init.Datatypes <> list ind
+R5998:6000 Coq.Init.Datatypes <> nat ind
+binder 5946:5951 <> models:120
+R6013:6016 Coq.Init.Datatypes <> list ind
+R6018:6020 Coq.Init.Datatypes <> nat ind
+binder 6009:6009 <> D:121
+R6035:6038 Coq.Init.Datatypes <> list ind
+R6041:6044 Main.Forest <> pair ind
+R6047:6050 Main.Forest <> pair ind
+R6052:6054 Coq.Init.Datatypes <> nat ind
+R6057:6060 Coq.Init.Datatypes <> list ind
+R6064:6067 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6063:6063 Main.rnk.Model <> X:110 var
+R6068:6073 Main.rnk.rnk <> Target ind
+R6076:6079 Main.Forest <> pair ind
+R6081:6081 Main.rnk.Model <> X:110 var
+R6084:6087 Coq.Init.Datatypes <> list ind
+R6089:6091 Coq.Init.Datatypes <> nat ind
+R6098:6101 Coq.Init.Datatypes <> bool ind
+binder 6026:6031 <> trules:122
+R6129:6144 Main.rnk.rnk <> restrictionSteps def
+R6280:6285 Main.rnk.Model <> trules:122 var
+R6272:6278 Main.rnk.Model <> default:119 var
+R6259:6264 Main.rnk.Model <> arrows:117 var
+R6247:6251 Main.rnk.Model <> split:116 var
+R6216:6220 Main.rnk.Model <> geb_X:115 var
+R6204:6208 Main.rnk.Model <> leb_X:114 var
+R6192:6196 Main.rnk.Model <> eqb_X:113 var
+R6160:6160 Main.rnk.Model <> M:112 var
+R6152:6152 Main.rnk.Model <> A:111 var
+binder 6116:6120 <> steps:123
+R6307:6318 Main.rnk.rnk <> computeTable def
+R6320:6324 Main.rnk.Model <> steps:123 var
+binder 6298:6302 <> table:124
+R6345:6350 Main.Forest <> proj_r def
+R6352:6356 Main.rnk.Model <> table:124 var
+binder 6335:6340 <> matrix:125
+R6375:6380 Main.Forest <> proj_l def
+R6382:6386 Main.rnk.Model <> table:124 var
+binder 6367:6370 <> subA:126
+R6411:6428 Main.rnk.Model <> checkAllModels_aux def
+R6453:6453 Main.rnk.Model <> D:121 var
+R6449:6451 Main.rnk.Model <> Val:118 var
+R6442:6447 Main.rnk.Model <> models:120 var
+R6437:6440 Main.rnk.Model <> subA:126 var
+R6430:6435 Main.rnk.Model <> matrix:125 var
+binder 6397:6406 <> models_res:127
+R6460:6460 Main.rnk.rnk <> :::'('_x_','_x_')' not
+R6483:6484 Main.rnk.rnk <> :::'('_x_','_x_')' not
+R6532:6532 Main.rnk.rnk <> :::'('_x_','_x_')' not
+R6461:6475 Main.rnk.rnk <> rearrangeModels def
+R6477:6482 Main.rnk.Model <> models:120 var
+R6485:6485 Main.rnk.rnk <> :::'('_x_','_x_')' not
+R6490:6492 Main.rnk.rnk <> :::'('_x_','_x_')' not
+R6530:6531 Main.rnk.rnk <> :::'('_x_','_x_')' not
+R6486:6489 Main.rnk.Model <> subA:126 var
+R6493:6511 Main.rnk.Model <> checkAllModels_aux2 def
+R6513:6518 Main.rnk.Model <> matrix:125 var
+R6520:6529 Main.rnk.Model <> models_res:127 var

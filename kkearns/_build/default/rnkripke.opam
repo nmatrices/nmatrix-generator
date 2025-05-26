@@ -7,9 +7,7 @@ description:
 maintainer: ["Renato Leme"]
 authors: ["Renato Leme"]
 license: "LICENSE"
-tags: [
-  "topics" "modal logics, nmatrix, kearns, truth-table" "your" "project"
-]
+tags: ["modal logics" "nmatrix" "kearns" "truth-table"]
 homepage: "https://github.com/rrleme/nmatrix-generator"
 doc: "https://url/to/documentation"
 bug-reports: "https://github.com/rrleme/nmatrix-generator/issues"

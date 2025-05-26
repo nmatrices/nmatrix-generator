@@ -72,6 +72,12 @@ type logic =
 | KD4
 | KD5
 | KD45
+| K
+| KB
+| K4
+| K5
+| K45
+| KB45
 
 let string_to_logic = function
   | ("KT45" | "S5" | "KTB45" | "KT5" | "T5") -> KT45
@@ -83,6 +89,12 @@ let string_to_logic = function
   | ("KD4" | "D4") -> KD4
   | ("KD5" | "D5") -> KD5
   | ("KD45" | "D45") -> KD45
+  | ("K" | "kearns") -> K
+  | "KB" -> KB
+  | "K4" -> K4
+  | "K5" -> K5
+  | "K45" -> K45
+  | ("KB45" | "KB5") -> KB45
   | _ -> invalid_arg "Invalid logic"
 
 let rec list_wff_to_list_md l wff_to_string counter = match l with
@@ -154,6 +166,7 @@ let l = string_to_logic logic in
 let des = match l with
   | (KT45 | KT4 | KTB | KT) -> "{6, 7}" 
   | (KD | KDB | KD4 | KD5 | KD45) -> "{4,6,7}" 
+  | (K | KB | K4 | K5 | K45 | KB45) -> "{4,5,6,7}"
 in
 let title = 
   if level0 then
@@ -268,6 +281,42 @@ let tableKD45 =
 in
 let rnkKD45 w = Kd45.makeThisRn (int_to_nat w) (expr_to_lF (parse prop)) in
 let checkAllKD45 = Kd45.makeCheckAllModels (expr_to_lF (parse prop)) in
+let tableK = 
+  if level0 then K.makeLevel0 (expr_to_lF (parse prop)) 
+  else K.makeComputeTable (expr_to_lF (parse prop)) 
+in
+let rnkK w = K.makeThisRn (int_to_nat w) (expr_to_lF (parse prop)) in
+let checkAllK = K.makeCheckAllModels (expr_to_lF (parse prop)) in
+let tableKB = 
+  if level0 then Kb.makeLevel0 (expr_to_lF (parse prop)) 
+  else Kb.makeComputeTable (expr_to_lF (parse prop)) 
+in
+let rnkKB w = Kb.makeThisRn (int_to_nat w) (expr_to_lF (parse prop)) in
+let checkAllKB = Kb.makeCheckAllModels (expr_to_lF (parse prop)) in
+let tableK4 = 
+  if level0 then K4.makeLevel0 (expr_to_lF (parse prop)) 
+  else K4.makeComputeTable (expr_to_lF (parse prop)) 
+in
+let rnkK4 w = K4.makeThisRn (int_to_nat w) (expr_to_lF (parse prop)) in
+let checkAllK4 = K4.makeCheckAllModels (expr_to_lF (parse prop)) in
+let tableK5 = 
+  if level0 then K5.makeLevel0 (expr_to_lF (parse prop)) 
+  else K5.makeComputeTable (expr_to_lF (parse prop)) 
+in
+let rnkK5 w = K5.makeThisRn (int_to_nat w) (expr_to_lF (parse prop)) in
+let checkAllK5 = K5.makeCheckAllModels (expr_to_lF (parse prop)) in
+let tableK45 = 
+  if level0 then K45.makeLevel0 (expr_to_lF (parse prop)) 
+  else K45.makeComputeTable (expr_to_lF (parse prop)) 
+in
+let rnkK45 w = K45.makeThisRn (int_to_nat w) (expr_to_lF (parse prop)) in
+let checkAllK45 = K45.makeCheckAllModels (expr_to_lF (parse prop)) in
+let tableKB45 = 
+  if level0 then Kb45.makeLevel0 (expr_to_lF (parse prop)) 
+  else Kb45.makeComputeTable (expr_to_lF (parse prop)) 
+in
+let rnkKB45 w = Kb45.makeThisRn (int_to_nat w) (expr_to_lF (parse prop)) in
+let checkAllKB45 = Kb45.makeCheckAllModels (expr_to_lF (parse prop)) in
 match l with
 | KT45 -> genFile tableKT45 rnkKT45 checkAllKT45
 | KT4 -> genFile tableKT4 rnkKT4 checkAllKT4
@@ -277,4 +326,10 @@ match l with
 | KDB -> genFile tableKDB rnkKDB checkAllKDB
 | KD4 -> genFile tableKD4 rnkKD4 checkAllKD4
 | KD5 -> genFile tableKD5 rnkKD5 checkAllKD5 
-| KD45 -> genFile tableKD45 rnkKD45 checkAllKD45 ;;
+| KD45 -> genFile tableKD45 rnkKD45 checkAllKD45
+| K -> genFile tableK rnkK checkAllK
+| KB -> genFile tableKB rnkKB checkAllKB
+| K4 -> genFile tableK4 rnkK4 checkAllK4
+| K5 -> genFile tableK5 rnkK5 checkAllK5 
+| K45 -> genFile tableK45 rnkK45 checkAllK45
+| KB45 -> genFile tableKB45 rnkKB45 checkAllKB45 ;;

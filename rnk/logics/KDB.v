@@ -32,9 +32,9 @@ Definition neg_def :=
  
 Definition box_def :=
   [
-    (vF, [vf2; vf; vF]);
-    (vf, [vf2; vf; vF]);
-    (vf2, [vt2; vt; vT]);
+    (vF, [vF]);
+    (vf, [vF]);
+    (vf2, [vt2]);
     (vt2, [vf2; vf; vF]);
     (vt, [vf2; vf; vF]);
     (vT, [vt2; vt; vT])
@@ -45,9 +45,9 @@ Definition dia_def :=
     (vF, [vf2; vf; vF]);
     (vf, [vt2; vt; vT]);
     (vf2, [vt2; vt; vT]);
-    (vt2, [vf2; vf; vF]);
-    (vt, [vt2; vt; vT]);
-    (vT, [vt2; vt; vT])
+    (vt2, [vf2]);
+    (vt, [vT]);
+    (vT, [vT])
   ].
 
 Definition impl_def :=
@@ -226,6 +226,25 @@ Definition makeComputeTable
   let steps := makeRestrictionSteps A in
   computeTable steps.
 
+Fixpoint makeLevel0_aux1 (row : list (Forest.node LF)) :=
+  match row with
+  | nil => nil
+  | (Forest.Node _ _ A)::tl => A::(makeLevel0_aux1 tl)
+  end.
+
+Fixpoint makeLevel0_aux (initLabel: nat) (table : list (list nat)) :=
+  match table with
+  | nil => nil
+  | row::tl =>
+      (initLabel; row)::(makeLevel0_aux (initLabel+1) tl)
+  end.
+
+Definition makeLevel0
+  (A : LF) :=
+  let table := reverseThisList (makeMatrix A) in
+  let subA := makeLevel0_aux1 (pop table nil) in
+  let level0 := nodeToNat table in
+  (subA; makeLevel0_aux 1 level0).
 
 (*************************************)
 
@@ -291,7 +310,7 @@ Definition makeThisRn
     arrowsKDB
     8
     D
-    nil
+    [Symmetry]
     smallest lazymode truleKDB
 .
 
@@ -310,7 +329,7 @@ Definition makeAllRn
     arrowsKDB
     8
     D
-    nil
+    [Symmetry]
     smallest lazymode truleKDB
 .
 
@@ -370,5 +389,5 @@ Extract Inductive bool => "bool" [ "true" "false" ].
 Extract Inductive list => "list" [ "[]" "(::)" ].
 
 Recursive Extraction
-  makeCheckAllModels makeComputeTable makeThisRn.
+  makeCheckAllModels makeComputeTable makeThisRn makeLevel0.
 

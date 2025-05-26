@@ -3,6 +3,24 @@
 (** @canonical Rnkripke.Ast *)
 module Ast = Rnkripke__Ast
 
+(** @canonical Rnkripke.K *)
+module K = Rnkripke__K
+
+(** @canonical Rnkripke.K4 *)
+module K4 = Rnkripke__K4
+
+(** @canonical Rnkripke.K45 *)
+module K45 = Rnkripke__K45
+
+(** @canonical Rnkripke.K5 *)
+module K5 = Rnkripke__K5
+
+(** @canonical Rnkripke.Kb *)
+module Kb = Rnkripke__Kb
+
+(** @canonical Rnkripke.Kb45 *)
+module Kb45 = Rnkripke__Kb45
+
 (** @canonical Rnkripke.Kd *)
 module Kd = Rnkripke__Kd
 
