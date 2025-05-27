@@ -49,7 +49,7 @@ let impl_def =
     (vt::[])))::((Pair ((Pair (vf, vf)), (vT::(vt::[]))))::((Pair ((Pair (vf, vf2)),
     (vT::[])))::((Pair ((Pair (vf, vt2)), (vt::[])))::((Pair ((Pair (vf, vt)),
     (vT::(vt::[]))))::((Pair ((Pair (vf, vT)), (vT::[])))::((Pair ((Pair (vf2, vF)),
-    (vt2::[])))::((Pair ((Pair (vf2, vf)), (vT::(vt::[]))))::((Pair ((Pair (vf2, vf2)),
+    (vt2::[])))::((Pair ((Pair (vf2, vf)), (vt::[])))::((Pair ((Pair (vf2, vf2)),
     (vT::[])))::((Pair ((Pair (vf2, vt2)), (vt2::[])))::((Pair ((Pair (vf2, vt)),
     (vt::[])))::((Pair ((Pair (vf2, vT)), (vT::[])))::((Pair ((Pair (vt2, vF)),
     (vf2::[])))::((Pair ((Pair (vt2, vf)), (vf2::[])))::((Pair ((Pair (vt2, vf2)),

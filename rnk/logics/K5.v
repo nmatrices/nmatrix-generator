@@ -78,7 +78,7 @@ Definition impl_def :=
     ((vf; vt); [vT; vt]);
     ((vf; vT); [vT]);
     ((vf2; vF); [vt2]);
-    ((vf2; vf); [vT; vt]);
+    ((vf2; vf); [vt]);
     ((vf2; vf2); [vT]);
     ((vf2; vt2); [vt2]);
     ((vf2; vt); [vt]);
@@ -405,12 +405,14 @@ Definition AB := P --> [] (<> P).
 Definition AT := [] P --> P.
 Definition A4 := []P --> [][]P.
 Definition AD := []P --> <> P.
-Definition A5 := <> P --> []<> P.
+Definition A5 := (<> P) --> []<> P.
 
 Definition k1 := ([](P  --> Q)) --> ((<> P) --> <> Q).
 Definition k2 := (<> (P \/ Q)) --> ((<> P) \/ <> Q).
 Definition k3 := ((<> P) --> [] Q) --> [] (P --> Q).
 Definition k4 := (~ <> (P /\ ~ P)).
+
+Compute makeLevel0 A5.
 
 Require Import Model.
 

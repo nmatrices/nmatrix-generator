@@ -1,4 +1,4 @@
 (lang dune 3.16)
 (name rnkripke)
 (sections (lib .) (bin ../../bin) (doc ../../doc/rnkripke))
-(files (lib (META dune-package opam)) (bin (rnkripke)) (doc (README.md)))
+(files (lib (META dune-package opam)) (bin (kkearns)) (doc (README.md)))

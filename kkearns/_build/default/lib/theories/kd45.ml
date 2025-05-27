@@ -39,7 +39,7 @@ let impl_def =
     (vt::[])))::((Pair ((Pair (vf, vf)), (vT::(vt::[]))))::((Pair ((Pair (vf, vf2)),
     (vT::[])))::((Pair ((Pair (vf, vt2)), (vt::[])))::((Pair ((Pair (vf, vt)),
     (vT::(vt::[]))))::((Pair ((Pair (vf, vT)), (vT::[])))::((Pair ((Pair (vf2, vF)),
-    (vt2::[])))::((Pair ((Pair (vf2, vf)), (vT::(vt::[]))))::((Pair ((Pair (vf2, vf2)),
+    (vt2::[])))::((Pair ((Pair (vf2, vf)), (vt::[])))::((Pair ((Pair (vf2, vf2)),
     (vT::[])))::((Pair ((Pair (vf2, vt2)), (vt2::[])))::((Pair ((Pair (vf2, vt)),
     (vt::[])))::((Pair ((Pair (vf2, vT)), (vT::[])))::((Pair ((Pair (vt2, vF)),
     (vf2::[])))::((Pair ((Pair (vt2, vf)), (vf2::[])))::((Pair ((Pair (vt2, vf2)),
@@ -134,14 +134,14 @@ let makeComputeTable a =
 
 let makeThisRn _ a smallest lazymode =
   rnkripke a (makeMatrix a) eqb_lf leb_lf geb_lf length_lf split_lf arrowsKD45 (S (S (S
-    (S (S (S (S (S O)))))))) d0 (Transitive::(Symmetry::[])) smallest lazymode truleKD45
+    (S (S (S (S (S O)))))))) d0 (Transitive::[]) smallest lazymode truleKD45
 
 (** val makeAllRn :
     lF -> bool -> bool -> (nat, (lF node0 list, nat list) pair) pair list **)
 
 let makeAllRn a smallest lazymode =
   rnkripke a (makeMatrix a) eqb_lf leb_lf geb_lf length_lf split_lf arrowsKD45 (S (S (S
-    (S (S (S (S (S O)))))))) d0 (Transitive::(Symmetry::[])) smallest lazymode truleKD45
+    (S (S (S (S (S O)))))))) d0 (Transitive::[]) smallest lazymode truleKD45
 
 (** val val0 : lF -> lF node0 list -> nat -> bool **)
 

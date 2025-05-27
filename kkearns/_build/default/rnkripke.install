@@ -4,7 +4,7 @@ lib: [
   "_build/install/default/lib/rnkripke/opam"
 ]
 bin: [
-  "_build/install/default/bin/rnkripke"
+  "_build/install/default/bin/kkearns"
 ]
 doc: [
   "_build/install/default/doc/rnkripke/README.md"

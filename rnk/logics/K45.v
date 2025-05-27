@@ -78,7 +78,7 @@ Definition impl_def :=
     ((vf; vt); [vT; vt]);
     ((vf; vT); [vT]);
     ((vf2; vF); [vt2]);
-    ((vf2; vf); [vT; vt]);
+    ((vf2; vf); [vt]);
     ((vf2; vf2); [vT]);
     ((vf2; vt2); [vt2]);
     ((vf2; vt); [vt]);
@@ -448,7 +448,7 @@ Definition makeThisRn
     arrowsK45
     8
     D
-    nil (* TODO: Euclidianity *)
+    [Transitive] (* TODO: Euclidianity *)
     smallest lazymode truleK45
 .
 
@@ -467,7 +467,7 @@ Definition makeAllRn
     arrowsK45
     8
     D
-    nil (* TODO: Euclidianity *)
+    [Transitive] (* TODO: Euclidianity *)
     smallest lazymode truleK45
 .
 

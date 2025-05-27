@@ -20,7 +20,7 @@ module Cmd = struct
 
 let usage = "
 Usage:
- kkearns [-l <string>] [-g <string>] [-level0 | -lazy_mode | -smallest ] <prop>
+ kkearns [-l <string>] [-g <string>] [-level0 | -m] <prop : string>
 
 1) Description
 
