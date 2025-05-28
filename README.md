@@ -25,7 +25,7 @@ The basic usage is:
 Here, `[logic]` is `K` optionally combined with one or more of `D`, `B`, `T`, `4`, and `5`. The `prop` argument is a proposition defined by the following grammar:
 
 ```
-prop := p | q | <> p | [] p | p -> q | p /\ q | p \/ q
+prop := p | q | ~ p | <> p | [] p | p -> q | p /\ q | p \/ q
 ```
 
 For example:
