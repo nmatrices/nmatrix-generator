@@ -1,6 +1,6 @@
-# Kearns' nmatrix generator
+# Kearns' Nmatrix generator
 
-This repository contains an implementation of the truth table method (nmatrix generator and refinement algorithm developed in [1]) in Rocq ([src/forest](src/forest/)), along with an OCaml interface ([src/kearns](src/kearns/)).
+This repository contains an implementation of the truth table method (Nmatrix generator and refinement algorithm developed in [1]) in Rocq ([src/forest](src/forest/)), along with an OCaml interface ([src/kearns](src/kearns/)).
 
 ## Requirements
 
@@ -18,7 +18,7 @@ Make sure these programs are available in your `PATH` before use.
 
 The basic usage is:
 
-```shell
+```
 ./kearns -l [logic] "prop"
 ```
 
@@ -30,17 +30,17 @@ prop := p | q | ~ p | <> p | [] p | p -> q | p /\ q | p \/ q
 
 For example:
 
-```shell
+```
 ./kearns -l KTB "<> p -> []<> p"
 ```
 
 produces:
 
-![Example nmatrix](./assets/ex1.png)
+![Example Nmatrix](./assets/ex1.png)
 
-The set $\mathcal{D}$ displays the designated values in the target logic. Line 6 shows a partial valuation where the proposition fails. To generate the full counter-model for this proposition, add the `-m` flag:
+The set $\mathcal{D}$ displays the designated values in the target logic. In this example, line $6$ shows a partial valuation where the proposition fails. To generate the full counter-model for this proposition, add the `-m` flag:
 
-```shell
+```
 ./kearns -l KTB "<> p -> []<> p" -m
 ```
 
@@ -51,6 +51,26 @@ This produces, among others, the following model:
 In this figure, each node represents a partial valuation from the table and can be identified by its label (`id`). Root nodes are outlined in green. The absence of an atomic proposition in a node means the proposition is false in that partial valuation.
 
 Dotted lines between nodes are added by a completion algorithm that builds a Kripke model based on the output of the truth table. More details can be found in [1].
+
+### Model checking
+
+As a sanity check, the ``-m`` mode also produces a model-checking matrix. This matrix uses standard Kripke semantics to verify whether the truth value assigned by Kearns semantics to each formula in every partial valuation is consistent with the corresponding value in the generated Kripke model. In the example above, the following matrix is produced:
+
+
+![Example of model checking](./assets/ex3.png)
+
+In this matrix, a value of **1** indicates that the formula has the same truth value (true or false) in the Kripke model as it does in the Nmatrix.
+
+
+### Optional arguments
+
+It is possible to generate only the level $0$ by adding the flag ``-level0``. For instance,
+
+```
+./kearns -l KD45 "[](p -> q) -> ([]p -> []q)" -level0
+```
+
+A silent mode, which produces the files but don't open them, is available by using the flag ``-silent``.
 
 ## References
 
