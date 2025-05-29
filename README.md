@@ -54,12 +54,13 @@ Dotted lines between nodes are added by a completion algorithm that builds a Kri
 
 ### Model checking
 
-As a sanity check, the ``-m`` mode also produces a model-checking matrix. This matrix uses standard Kripke semantics to verify whether the truth value assigned by Kearns semantics to each formula in every partial valuation is consistent with the corresponding value in the generated Kripke model. In the example above, the following matrix is produced:
+Note that this release is a pre-alpha, hence it may contain some issues.
 
+As a sanity check, the ``-m`` mode also produces a model-checking matrix. This matrix uses standard Kripke semantics to verify whether the truth value assigned by Kearns semantics to each formula in every partial valuation is consistent with the corresponding value in the generated Kripke model. In the example above, the following matrix is produced:
 
 ![Example of model checking](./assets/ex3.png)
 
-In this matrix, a value of **1** indicates that the formula has the same truth value (true or false) in the Kripke model as it does in the Nmatrix.
+In this matrix, a value of **1** indicates that the formula has the same truth value (true or false) in the Kripke model as it does in the Nmatrix. The value **0** would indicate a problem. If you find any, please let me know!
 
 
 ### Optional arguments
