@@ -71,7 +71,7 @@ It is possible to generate only the level $0$ by adding the flag ``-level0``. Fo
 ./kearns -l KD45 "[](p -> q) -> ([]p -> []q)" -level0
 ```
 
-This is always faster than computing the restrictions. For this this reason, it is often useful to use this flag before trying to compute the restrictions. Keep in mind that, if a formula is a tautology in the level $0$, then it is a tautology in all levels.
+This is always faster than computing the restrictions. For this this reason, it is often useful to use this flag before trying to compute them. Keep in mind that, if a formula is a tautology in the level $0$, then it is a tautology in all levels.
 
 A silent mode, which produces the files but don't open them, is available by using the flag ``-silent``.
 
