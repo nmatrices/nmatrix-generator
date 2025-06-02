@@ -4,7 +4,7 @@ This repository contains an implementation of the truth table method (Nmatrix ge
 
 ## Requirements
 
-To run [src/forest](src/forest/), you must have Rocq (formerly known as Coq) installed on your system. To run [src/kearns](src/kearns/), you need OCaml. Alternatively, a compiled binary of the interface is available in [bin/](bin/).
+To run [src/forest](src/forest/), you must have [Rocq](https://rocq-prover.org/) installed on your system. To run [src/kearns](src/kearns/), you need [OCaml](https://ocaml.org/). Alternatively, a compiled binary of the interface is available in [bin/](bin/).
 
 > **Note:** The binary was compiled for Unix (Ubuntu 24.04.2 LTS) and depends on the following tools for output generation:
 
